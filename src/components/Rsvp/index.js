@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const RSVP = ({ guest }) => {
   const event = guest.type == 'wedding' ? 'Wedding' : 'Reception';
-
+  const [submission, setSubmission] = useState();
   const formResult = {
     dietary: '',
   };
@@ -10,14 +10,12 @@ const RSVP = ({ guest }) => {
   const handleAttendanceChange = event => {
     const guest = event.target.dataset.name;
     formResult[guest] = event.target.value;
+    setSubmission(formResult);
   };
 
   const handleDietaryChange = event => {
     formResult.dietary = event.target.value;
-  };
-
-  const handleSubmit = event => {
-    console.log(JSON.stringify(formResult, null, 2));
+    setSubmission(formResult);
   };
 
   return (
@@ -56,10 +54,13 @@ const RSVP = ({ guest }) => {
         cols="32"
       />
 
-      <input type="submit" value="submit" onClick={handleSubmit} />
-
-      <form>
-        <input type="hidden"></input>
+      <form name="rsvp" method="POST" data-netlify="true">
+        <input type="button" value="Submit" onClick={handleSubmit} />
+        <textarea
+          type="hidden"
+          name="values"
+          value={JSON.stringify(submission, 2, null)}
+        />
       </form>
     </>
   );
