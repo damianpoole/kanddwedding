@@ -56,7 +56,7 @@ const RSVP = ({ guest }) => {
 
       <form name="rsvp" method="POST" data-netlify="true">
         <input type="submit" value="Submit" />
-        <textarea
+        <input
           type="hidden"
           name="values"
           value={JSON.stringify(submission, 2, null)}
