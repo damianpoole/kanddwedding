@@ -12,6 +12,10 @@ module.exports = {
           {
             family: `Norican`,
           },
+          {
+            family: 'Poppins',
+            variants: [`400`, `600`, `800`],
+          },
         ],
       },
     },

@@ -1,20 +1,20 @@
 .gettingThere {
-  background: var(--main-color);
-  color: white;
-}
-
-.gettingThere h2 {
-  color: var(--off-color);
-}
-
-.gettingThere h3 {
-  color: var(--highlight-color);
+  background: #5c7b81ff;
 }
 
 .gettingThere > div {
   margin: 0 auto;
-  width: 960px;
-  padding: 5em 2em 2em 3em;
+  width: var(--site-width);
+  color: white;
+  padding: 2em;
+}
+
+.gettingThere iframe {
+  margin-bottom: 0;
+}
+
+.gettingThere h3 {
+  text-decoration: underline;
 }
 
 .grid {

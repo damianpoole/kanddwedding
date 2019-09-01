@@ -8,6 +8,7 @@ import GettingThere from '../components/GettingThere';
 import DayPlan from '../components/DayPlan';
 import Accomadation from '../components/Accomadation';
 import RSVP from '../components/Rsvp';
+import Info from '../components/Info';
 import * as qs from 'query-string';
 
 import { graphql } from 'gatsby';
@@ -29,6 +30,7 @@ const IndexPage = ({ data }) => {
       <GettingThere />
       {guest && <DayPlan guest={guest} />}
       <Accomadation />
+      <Info />
       <RSVP guest={guest} />
     </Layout>
   );

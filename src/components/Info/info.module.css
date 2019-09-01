@@ -1,0 +1,13 @@
+.info {
+  background: #5c7b81ff;
+  color: white;
+}
+
+.info > div {
+  margin: 0 auto;
+  width: var(--site-width);
+  padding: 2em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2em;
+}

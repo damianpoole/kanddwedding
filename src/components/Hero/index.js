@@ -1,15 +1,27 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Styles from './hero.module.css';
 
-const Hero = () => (
-  <section className={Styles.hero}>
-    <div>
-      <h1>Damian &amp; Kirsty</h1>
-      <h2>Are Getting Married</h2>
-      <p>Saturday 30th November 2019</p>
-    </div>
-  </section>
-);
+const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "banner.webp" }) {
+        childImageSharp {
+          fluid(maxWidth: 1024) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
+  return (
+    <section className={Styles.hero}>
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+    </section>
+  );
+};
 
 export default Hero;

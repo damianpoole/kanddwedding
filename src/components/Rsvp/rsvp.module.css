@@ -1,0 +1,34 @@
+.rsvp {
+  background: #caa638ff;
+  color: white;
+}
+
+.rsvp > div {
+  margin: 0 auto;
+  width: var(--site-width);
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 55% auto;
+  grid-gap: 20px;
+}
+
+.rsvp p label {
+  margin: 0 10px;
+}
+
+.rsvp span {
+  width: 100px;
+  display: inline-block;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}

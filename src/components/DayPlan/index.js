@@ -7,22 +7,33 @@ const DayPlan = ({ guest }) => {
   return (
     <section className={Styles.dayplan}>
       <div>
-        <h2>The Plan for the Day</h2>
+        <h2>Day Plan</h2>
         {allDay ? (
           <p>
-            1pm - Ceremony followed by drinks reception
+            1pm Ceremony
             <br />
-            3pm - Sit down for some food
+            1.30pm Welcome drinks at the bar
             <br />
-            5pm - Speeches
+            3pm Wedding breakfast*
             <br />
-            6pm - Cut the cake
+            5pm Finish wedding breakfast &amp; speeches*
             <br />
-            7pm - Dancing Time!!
+            7pm Evening guests arrive
+            <br />
+            8pm First dance/Cake cutting*
+            <br />
+            8.30pm/9pm Evening food*
           </p>
         ) : (
-          <p>7pm - Dancing Time!!</p>
+          <p>
+            7pm Evening guests arrive
+            <br />
+            8pm First dance/Cake cutting*
+            <br />
+            8.30pm/9pm Evening food*
+          </p>
         )}
+        <p>(*subject to change)</p>
       </div>
     </section>
   );

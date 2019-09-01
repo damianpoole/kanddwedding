@@ -1,0 +1,24 @@
+.accomadation {
+  background: #405337ff;
+  color: white;
+}
+
+.accomadation > div {
+  margin: 0 auto;
+  width: var(--site-width);
+  padding: 2em;
+}
+
+.accomadation > div > div {
+  margin: 0 10px;
+}
+
+.accomadation h3 {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.accomadation a,
+.accomadation a:visited {
+  color: white;
+}

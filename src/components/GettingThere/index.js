@@ -5,13 +5,16 @@ import Styles from './getting.module.css';
 const GettingThere = () => (
   <section className={Styles.gettingThere}>
     <div>
+      <h2>Getting There</h2>
       <div className={Styles.grid}>
         <div className={Styles.address}>
-          <h2>Getting There</h2>
+          <h3>Address:</h3>
           <address>
             The Arches,
             <br />
-            E Mill, 328 Dean Clough,
+            E Mill,
+            <br />
+            328 Dean Clough,
             <br />
             Halifax,
             <br />
@@ -19,14 +22,18 @@ const GettingThere = () => (
           </address>
         </div>
         <div className={Styles.transportMethod}>
-          <h3>By Car</h3>
-          <p>There is free parking onsite</p>
+          <h3>Parking:</h3>
+          <p>
+            Plenty of parking is available onsite and is free of charge all
+            weekend.
+          </p>
         </div>
         <div className={Styles.transportMethod}>
-          <h3>By Train</h3>
+          <h3>Train:</h3>
           <p>
-            There is a train station in Halifax which is approximately a 20
-            minute walk away from the venue
+            Halifax train station is a 20 minute walk from the venue. There are
+            taxis outside the station and they should take about 5 minutes to
+            get to the venue.
           </p>
         </div>
       </div>

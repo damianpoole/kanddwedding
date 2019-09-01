@@ -1,15 +1,14 @@
 .dayplan {
-  background: var(--off-background-color);
+  background: #dd7e6bff;
   color: white;
-  padding: 2em;
-  display: flex;
-  justify-content: center;
 }
 
 .dayplan > div {
   margin: 0 auto;
+  width: var(--site-width);
+  padding: 2em;
 }
 
-.dayplan h2 {
-  color: var(--off-color);
+.dayplan p {
+  margin: 0 10px;
 }

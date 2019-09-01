@@ -1,11 +1,28 @@
 .nav {
+  display: flex;
+  padding: 10px 15px;
+  width: var(--site-width);
+  margin: 0 auto;
 }
 
 .nav a {
   text-transform: uppercase;
-  color: var(--main-color);
+  color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   margin: 0 10px;
+}
+
+.nav div {
+}
+
+.rsvp {
+  flex-grow: 1;
+}
+
+.rsvp a {
+  background: #caa638ff;
+  padding: 8px 12px;
+  margin: 0;
 }

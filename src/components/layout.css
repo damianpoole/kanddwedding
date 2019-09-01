@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -13,6 +13,8 @@ body {
   --off-color: rgba(217, 129, 36, 1);
   --off-background-color: rgba(119, 60, 59, 1);
   --highlight-color: rgba(211, 154, 139, 1);
+
+  --site-width: 1024px;
 }
 article,
 aside,
@@ -191,7 +193,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em 'Poppins', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -205,8 +207,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
