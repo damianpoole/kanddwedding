@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  background: url(https://images.unsplash.com/photo-1535406148013-5806f2127f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=100);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero > div {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 5rem 0;
+  color: white;
+  font-family: 'Norican', cursive;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 400;
+  font-size: 56px;
+}
+
+.hero h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
