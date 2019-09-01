@@ -1,13 +1,28 @@
 [
   {
     "id": "152355",
-    "type": "all",
-    "name": "Joe Baum"
+    "type": "wedding",
+    "family": "Richie Dawson",
+    "guests": [
+      {
+        "name": "Richie"
+      },
+      {
+        "name": "Kristine"
+      }
+    ]
   },
   {
     "id": "167259",
-    "type": "evening",
-    "name": "Ryan Coulson",
-    "display": "Ryan & Tina"
+    "type": "reception",
+    "family": "Ryan Coulson",
+    "guests": [
+      {
+        "name": "Ryan"
+      },
+      {
+        "name": "Tina"
+      }
+    ]
   }
 ]

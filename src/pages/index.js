@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -13,8 +13,13 @@ import * as qs from 'query-string';
 import { graphql } from 'gatsby';
 
 const IndexPage = ({ data }) => {
-  const { g } = qs.parse(window.location.search);
-  const guest = data.allGuestsJson.nodes.filter(x => x.id === g)[0];
+  const [guest, setGuest] = useState();
+
+  useEffect(() => {
+    const { g } = qs.parse(window.location.search);
+    const guest = data.allGuestsJson.nodes.filter(x => x.id === g)[0];
+    setGuest(guest);
+  });
 
   return (
     <Layout>
@@ -33,9 +38,12 @@ export const query = graphql`
   query MyQuery {
     allGuestsJson {
       nodes {
-        name
         type
         id
+        guests {
+          name
+        }
+        family
       }
     }
   }

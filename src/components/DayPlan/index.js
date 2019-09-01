@@ -3,7 +3,7 @@ import React from 'react';
 import Styles from './dayplan.module.css';
 
 const DayPlan = ({ guest }) => {
-  const allDay = guest.type === 'all';
+  const allDay = guest.type === 'wedding';
   return (
     <section className={Styles.dayplan}>
       <div>
