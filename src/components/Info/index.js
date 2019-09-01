@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from './info.module.css';
 
 export default () => (
-  <section className={Styles.info}>
+  <section id="whattowear" className={Styles.info}>
     <div>
       <div>
         <h3>What to wear</h3>

@@ -5,7 +5,7 @@ import Styles from './dayplan.module.css';
 const DayPlan = ({ guest }) => {
   const allDay = guest.type === 'wedding';
   return (
-    <section className={Styles.dayplan}>
+    <section id="dayplan" className={Styles.dayplan}>
       <div>
         <h2>Day Plan</h2>
         {allDay ? (

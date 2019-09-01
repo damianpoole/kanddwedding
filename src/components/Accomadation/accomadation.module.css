@@ -1,12 +1,18 @@
 .accomadation {
   background: #405337ff;
   color: white;
+  padding-top: calc(var(--header-height) + 10px);
+  margin-top: calc(var(--header-height) * -1);
+  -webkit-background-clip: content-box;
+  background-clip: padding-box;
+  padding-bottom: calc(var(--header-height) + 10px);
 }
 
 .accomadation > div {
   margin: 0 auto;
   width: var(--site-width);
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .accomadation > div > div {

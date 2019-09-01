@@ -2,6 +2,7 @@ html {
   font-family: 'Poppins', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -15,6 +16,8 @@ body {
   --highlight-color: rgba(211, 154, 139, 1);
 
   --site-width: 1024px;
+
+  --header-height: 50px;
 }
 article,
 aside,

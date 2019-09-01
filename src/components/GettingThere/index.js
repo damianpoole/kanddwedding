@@ -3,7 +3,7 @@ import React from 'react';
 import Styles from './getting.module.css';
 
 const GettingThere = () => (
-  <section className={Styles.gettingThere}>
+  <section id="gettingthere" className={Styles.gettingThere}>
     <div>
       <h2>Getting There</h2>
       <div className={Styles.grid}>
@@ -46,6 +46,7 @@ const GettingThere = () => (
       style={{
         border: 0,
       }}
+      title="Google map location of The Arches"
       allowFullScreen
     ></iframe>
   </section>

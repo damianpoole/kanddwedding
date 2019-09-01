@@ -4,7 +4,6 @@ import Img from 'gatsby-image';
 import Styles from './rsvp.module.css';
 
 const RSVP = ({ guest = { guests: [] } }) => {
-  const event = guest.type == 'wedding' ? 'Wedding' : 'Reception';
   const [submission, setSubmission] = useState('');
   const [form, setForm] = useState({
     dietary: '',
@@ -46,7 +45,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
   `);
 
   return (
-    <section className={Styles.rsvp}>
+    <section id="rsvp" className={Styles.rsvp}>
       <div>
         <div>
           <h3>RSVP</h3>

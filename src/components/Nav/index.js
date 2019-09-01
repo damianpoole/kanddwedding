@@ -12,7 +12,7 @@ const Nav = () => (
       <a href="#dayplan">Day Plan</a>
       <a href="#accommodation">Accommodation</a>
       <a href="#whattowear">What to wear</a>
-      <a href="#gifts">Gifts</a>
+      <a href="#whattowear">Gifts</a>
     </div>
   </nav>
 );

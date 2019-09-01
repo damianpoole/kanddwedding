@@ -1,14 +1,20 @@
 .dayplan {
   background: #dd7e6bff;
   color: white;
+  padding-top: calc(var(--header-height) + 10px);
+  margin-top: calc(var(--header-height) * -1);
+  -webkit-background-clip: content-box;
+  background-clip: padding-box;
+  padding-bottom: calc(var(--header-height) + 10px);
 }
 
 .dayplan > div {
   margin: 0 auto;
   width: var(--site-width);
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .dayplan p {
-  margin: 0 10px;
+  margin: 40px 10px;
 }

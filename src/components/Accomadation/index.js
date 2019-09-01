@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from './accomadation.module.css';
 
 const Accomadation = () => (
-  <section className={Styles.accomadation}>
+  <section id="accommodation" className={Styles.accomadation}>
     <div>
       <h2>Accomadation</h2>
       <div>
@@ -28,7 +28,11 @@ const Accomadation = () => (
 
         <p>
           For more hotels here’s a{' '}
-          <a href="https://bit.ly/2HFQA9I" target="_blank">
+          <a
+            href="https://bit.ly/2HFQA9I"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             handy link to booking.com
           </a>{' '}
           for the night of the wedding (based on 2 people)
