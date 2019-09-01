@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RSVP = ({ guest }) => {
+const RSVP = ({ guest = { guests: [] } }) => {
   const event = guest.type == 'wedding' ? 'Wedding' : 'Reception';
   const [submission, setSubmission] = useState();
   const formResult = {

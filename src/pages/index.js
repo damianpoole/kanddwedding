@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
       <GettingThere />
       {guest && <DayPlan guest={guest} />}
       <Accomadation />
-      {guest && <RSVP guest={guest} />}
+      <RSVP guest={guest} />
     </Layout>
   );
 };
