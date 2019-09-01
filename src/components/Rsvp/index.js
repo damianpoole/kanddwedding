@@ -61,13 +61,14 @@ const RSVP = ({ guest = { guests: [] } }) => {
       <label htmlFor="dietary">Any dietary requirements?</label>
       <textarea
         id="dietary"
+        name="dietary"
         onChange={handleDietaryChange}
         rows="8"
         cols="32"
       />
 
       <form name="rsvp" action="/success" method="post" data-netlify="true">
-        <input type="hidden" name="values" value={submission} />
+        <input type="hidden" name="form-name" value="dietary" />
         <button type="submit">Submit</button>
       </form>
     </>
