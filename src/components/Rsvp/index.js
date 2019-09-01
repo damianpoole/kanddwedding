@@ -29,7 +29,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
               type="radio"
               id="yes"
               data-name={name}
-              name="attending"
+              name={name + '-attending'}
               value="Yes"
               onChange={handleAttendanceChange}
             />
@@ -38,7 +38,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
               type="radio"
               id="no"
               data-name={name}
-              name="attending"
+              name={name + '-attending'}
               value="No"
               onChange={handleAttendanceChange}
             />
@@ -54,13 +54,13 @@ const RSVP = ({ guest = { guests: [] } }) => {
         cols="32"
       />
 
-      <form name="rsvp" method="POST" netlify>
-        <input type="submit" value="Submit" />
+      <form name="rsvp" netlify>
         <input
           type="hidden"
           name="values"
           value={JSON.stringify(submission, 2, null)}
         />
+        <button type="submit">Submit</button>
       </form>
     </>
   );
