@@ -1,23 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const RSVP = ({ guest = { guests: [] } }) => {
   const event = guest.type == 'wedding' ? 'Wedding' : 'Reception';
-  const [submission, setSubmission] = useState();
-  const formResult = {
+  const [submission, setSubmission] = useState('');
+  const [form, setForm] = useState({
     dietary: '',
-  };
+  });
 
   const handleAttendanceChange = event => {
     const guest = event.target.dataset.name;
-    formResult[guest] = event.target.value;
-    console.log(formResult);
-    setSubmission(formResult);
+    setForm(prevstate => {
+      return {
+        ...prevstate,
+        [guest]: event.target.value,
+      };
+    });
   };
 
   const handleDietaryChange = event => {
-    formResult.dietary = event.target.value;
-    setSubmission(formResult);
+    setForm(prevstate => {
+      return {
+        ...prevstate,
+        dietary: event.target.value,
+      };
+    });
   };
+
+  useEffect(() => {
+    setSubmission(JSON.stringify(form, null, 2));
+  });
 
   return (
     <>
@@ -56,11 +67,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
       />
 
       <form name="rsvp" method="POST" data-netlify="true">
-        <input
-          type="hidden"
-          name="values"
-          value={JSON.stringify(submission, 2, null)}
-        />
+        <input type="hidden" name="values" value={submission} />
         <button type="submit">Submit</button>
       </form>
     </>
