@@ -10,6 +10,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
   const handleAttendanceChange = event => {
     const guest = event.target.dataset.name;
     formResult[guest] = event.target.value;
+    console.log(formResult);
     setSubmission(formResult);
   };
 
@@ -54,7 +55,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
         cols="32"
       />
 
-      <form name="rsvp" netlify>
+      <form name="rsvp" method="POST" data-netlify="true">
         <input
           type="hidden"
           name="values"
