@@ -66,7 +66,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
         cols="32"
       />
 
-      <form name="rsvp" method="POST" data-netlify="true">
+      <form name="rsvp" action="/success" method="POST" data-netlify="true">
         <input type="hidden" name="values" value={submission} />
         <button type="submit">Submit</button>
       </form>
