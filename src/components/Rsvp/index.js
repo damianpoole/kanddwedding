@@ -55,7 +55,7 @@ const RSVP = ({ guest }) => {
       />
 
       <form name="rsvp" method="POST" data-netlify="true">
-        <input type="button" value="Submit" onClick={handleSubmit} />
+        <input type="submit" value="Submit" />
         <textarea
           type="hidden"
           name="values"
