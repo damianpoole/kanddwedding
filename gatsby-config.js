@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kirsty and Damian's Wedding. 30th November 2019`,
     description: `Kirsty and Damian's Wedding. 30th November 2019`,
+    author: '@damianpoole',
   },
   plugins: [
     {
