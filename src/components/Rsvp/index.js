@@ -79,7 +79,11 @@ const RSVP = ({ guest = { guests: [] } }) => {
 
   return (
     <section id="rsvp" className={Styles.rsvp}>
-      <div>
+      <div
+        style={{
+          display: disabled ? 'none' : 'initial',
+        }}
+      >
         <div>
           <h3>RSVP</h3>
           {guest.guests.map(({ name }) => {
