@@ -13,6 +13,8 @@
   width: var(--site-width);
   padding-left: 2em;
   padding-right: 2em;
+  background: url('../../images/bed.png') right top no-repeat border-box;
+  background-size: 175px;
 }
 
 .accomadation > div > div {

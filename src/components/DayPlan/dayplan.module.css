@@ -1,5 +1,7 @@
 .dayplan {
-  background: #dd7e6bff;
+  background: #dd7e6bff url('../../images/clock.png') 55% center no-repeat
+    border-box;
+  background-size: 100px;
   color: white;
   padding-top: calc(var(--header-height) + 10px);
   margin-top: calc(var(--header-height) * -1);

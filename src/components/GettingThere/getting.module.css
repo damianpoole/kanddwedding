@@ -14,6 +14,14 @@
   padding: 2em;
 }
 
+.gettingThere h2 {
+  background: url('../../images/gettingthere.png') 270px top no-repeat
+    border-box;
+  background-size: 250px;
+  height: 80px;
+  display: block;
+}
+
 .gettingThere iframe {
   margin-bottom: 0;
 }
