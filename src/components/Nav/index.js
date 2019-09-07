@@ -2,11 +2,9 @@ import React from 'react';
 
 import Styles from './nav.module.css';
 
-const Nav = () => (
+const Nav = ({ haveGuest }) => (
   <nav className={Styles.nav}>
-    <div className={Styles.rsvp}>
-      <a href="#rsvp">RSVP</a>
-    </div>
+    <div className={Styles.rsvp}>{haveGuest && <a href="#rsvp">RSVP</a>}</div>
     <div>
       <a href="#gettingthere">Getting There</a>
       <a href="#dayplan">Day Plan</a>

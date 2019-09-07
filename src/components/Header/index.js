@@ -3,10 +3,10 @@ import Nav from '../Nav';
 
 import Styles from './header.module.css';
 
-const Header = () => (
+const Header = ({ haveGuest }) => (
   <header className={Styles.header}>
     <div className="container">
-      <Nav />
+      <Nav haveGuest={haveGuest}/>
     </div>
   </header>
 );

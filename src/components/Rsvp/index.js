@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Styles from './rsvp.module.css';
+import AttendingInput from '../AttendingInput';
 
 const RSVP = ({ guest = { guests: [] } }) => {
   const [submission, setSubmission] = useState('');
@@ -83,31 +84,10 @@ const RSVP = ({ guest = { guests: [] } }) => {
           <h3>RSVP</h3>
           {guest.guests.map(({ name }) => {
             return (
-              <div key={name}>
-                <p>
-                  <span>{name}:</span>
-                  <label htmlFor="yes">Coming</label>
-                  <input
-                    type="radio"
-                    id="yes"
-                    data-name={name}
-                    name={name + '-attending'}
-                    value="Yes"
-                    onChange={handleAttendanceChange}
-                    required
-                  />
-                  <label htmlFor="no">Not Coming</label>
-                  <input
-                    type="radio"
-                    id="no"
-                    data-name={name}
-                    name={name + '-attending'}
-                    value="No"
-                    onChange={handleAttendanceChange}
-                    required
-                  />
-                </p>
-              </div>
+              <AttendingInput
+                handleAttendanceChange={handleAttendanceChange}
+                name={name}
+              />
             );
           })}
           <label htmlFor="dietary">

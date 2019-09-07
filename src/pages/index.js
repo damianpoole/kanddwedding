@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Header />
+      <Header haveGuest={!!guest} />
       <Hero />
       <GettingThere />
       {guest && <DayPlan guest={guest} />}
