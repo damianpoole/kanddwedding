@@ -11,6 +11,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
     dietary: '',
   });
   const [disabled, setDisabled] = useState(true);
+  const [formDisplay, setformDisplay] = useState('none');
 
   const handleAttendanceChange = event => {
     const guest = event.target.dataset.name;
@@ -61,6 +62,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
       if (guests.length > 0 && keys.length === guests.length) {
         const empties = guests.filter(x => x === null);
         setDisabled(empties.length > 0);
+        setformDisplay('grid');
       }
     }
   }, [form]);
@@ -81,7 +83,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
     <section id="rsvp" className={Styles.rsvp}>
       <div
         style={{
-          display: disabled ? 'none' : 'initial',
+          display: formDisplay,
         }}
       >
         <div>
