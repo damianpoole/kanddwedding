@@ -10,7 +10,9 @@ const DayPlan = ({ guest }) => {
         <h2>Day Plan</h2>
         {allDay ? (
           <p>
-            1pm Ceremony
+            12.30pm Arrive at venue
+            <br />
+            1pm Ceremony starts
             <br />
             1.30pm Welcome drinks at the bar
             <br />
