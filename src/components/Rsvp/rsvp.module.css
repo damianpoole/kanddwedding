@@ -12,6 +12,15 @@
   grid-gap: 20px;
 }
 
+@media (max-width: 900px) {
+  .rsvp > div {
+    width: auto;
+    display: flex;
+    grid-template-columns: none;
+    grid-gap: initial;
+  }
+}
+
 .rsvp p label {
   margin: 0 10px;
 }

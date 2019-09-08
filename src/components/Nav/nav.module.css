@@ -14,9 +14,6 @@
   margin: 0 10px;
 }
 
-.nav div {
-}
-
 .rsvp {
   flex-grow: 1;
 }
@@ -25,4 +22,27 @@
   background: #caa638ff;
   padding: 5px 12px;
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    width: auto;
+    line-height: 30px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .rsvp a {
+    background: #caa638ff;
+    padding: 5px 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav a {
+    font-size: 8px;
+  }
 }

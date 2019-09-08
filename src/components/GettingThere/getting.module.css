@@ -40,3 +40,18 @@
   font-size: 26px;
   line-height: 1.2em;
 }
+
+@media (max-width: 900px) {
+  .gettingThere > div {
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .gettingThere h2 {
+    background: url('../../images/gettingthere.png') 160px top no-repeat
+      border-box;
+    background-size: 150px;
+    height: 50px;
+  }
+}

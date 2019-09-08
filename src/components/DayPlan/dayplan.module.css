@@ -20,3 +20,18 @@
 .dayplan p {
   margin: 40px 10px;
 }
+
+@media (max-width: 900px) {
+  .dayplan > div {
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .dayplan > div {
+    width: auto;
+    background: #dd7e6bff url('../../images/clock.png') 80% center no-repeat
+      border-box;
+    background-size: 100px;
+  }
+}

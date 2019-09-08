@@ -21,3 +21,17 @@
   background-size: 100px, 200px;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 900px) {
+  .info > div {
+    width: auto;
+    grid-template-columns: none;
+    grid-column-gap: 0;
+  }
+}
+
+@media (max-width: 1040px) {
+  .info > div {
+    background: none;
+  }
+}

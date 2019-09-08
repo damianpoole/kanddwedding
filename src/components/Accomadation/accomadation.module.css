@@ -30,3 +30,16 @@
 .accomadation a:visited {
   color: white;
 }
+
+@media (max-width: 900px) {
+  .accomadation > div {
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .accomadation > div {
+    background: url('../../images/bed.png') right top no-repeat border-box;
+    background-size: 95px;
+  }
+}
