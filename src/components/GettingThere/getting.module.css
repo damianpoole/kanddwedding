@@ -67,3 +67,12 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 375px) {
+  .gettingThere h2 {
+    background: url('../../images/gettingthere.png') 140px top no-repeat
+      border-box;
+    background-size: 125px;
+    height: 50px;
+  }
+}

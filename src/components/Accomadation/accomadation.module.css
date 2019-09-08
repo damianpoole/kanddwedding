@@ -43,3 +43,10 @@
     background-size: 95px;
   }
 }
+
+@media (max-width: 375px) {
+  .accomadation > div {
+    background: url('../../images/bed.png') right -20px no-repeat border-box;
+    background-size: 75px;
+  }
+}

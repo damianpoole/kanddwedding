@@ -35,3 +35,12 @@
     background-size: 100px;
   }
 }
+
+@media (max-width: 375px) {
+  .dayplan > div {
+    width: auto;
+    background: #dd7e6bff url('../../images/clock.png') 90% top no-repeat
+      border-box;
+    background-size: 80px;
+  }
+}
