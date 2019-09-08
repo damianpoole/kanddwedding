@@ -55,7 +55,8 @@ const RSVP = ({ guest = { guests: [] } }) => {
 
     if (dataAvailable.current) {
       setSubmission(JSON.stringify(form, null, 2));
-
+      delete form.guests[''];
+      console.log(form.guests);
       const guests = Object.values(form.guests);
       const keys = Object.keys(form.guests);
 

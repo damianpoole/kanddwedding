@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 export default ({ name, handleAttendanceChange }) => {
   const [plusOne, setPlusOne] = useState();
 
+  const handleNameChange = event => setPlusOne(event.target.value);
+
   return (
     <>
       {name === '' ? (
         <div key={name}>
           <p>
-            <input type="text" value={plusOne} />
+            <input type="text" value={plusOne} onChange={handleNameChange} />
             <label htmlFor="yes">Coming</label>
             <input
               type="radio"
