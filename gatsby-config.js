@@ -10,11 +10,10 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Norican`,
+            family: `Open Sans`,
           },
           {
-            family: 'Poppins',
-            variants: [`400`, `600`, `800`],
+            family: 'Nunito',
           },
         ],
       },

@@ -8,9 +8,22 @@ const DayPlan = ({ guest }) => {
     <section id="dayplan" className={Styles.dayplan}>
       <div>
         <h2>Day Plan</h2>
+
+        <p>
+          <u>Saturday 30th November 2019</u>
+        </p>
+
         {allDay ? (
           <p>
-            12.30pm Arrive at venue
+            12.30pm - 1pm Arrive at venue
+            <br />
+            <span>
+              The venue isn’t allowed to serve drinks before the ceremony due to
+              some old laws about their bar being (almost) open plan. If you
+              wish to have a drink before then there is a bar behind the venue
+              called <u>Stod Fold</u>
+            </span>
+            <br />
             <br />
             1pm Ceremony starts
             <br />
@@ -35,7 +48,7 @@ const DayPlan = ({ guest }) => {
             8.30pm/9pm Evening food*
           </p>
         )}
-        <p>(*subject to change)</p>
+        <p>(*this might change)</p>
       </div>
     </section>
   );

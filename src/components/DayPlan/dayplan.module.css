@@ -1,24 +1,35 @@
 .dayplan {
-  background: #dd7e6bff url('../../images/clock.png') 55% center no-repeat
-    border-box;
-  background-size: 100px;
-  color: white;
+  background: var(--off);
+  color: var(--main);
   padding-top: calc(var(--header-height) + 10px);
-  margin-top: calc(var(--header-height) * -1);
+  margin-top: calc(var(--header-height) * -1 + 10px);
   -webkit-background-clip: content-box;
   background-clip: padding-box;
   padding-bottom: calc(var(--header-height) + 10px);
 }
 
 .dayplan > div {
+  background: transparent url('../../images/clock.png') 80% 70% no-repeat
+    border-box;
+  background-size: 100px;
   margin: 0 auto;
   width: var(--site-width);
-  padding-left: 2em;
-  padding-right: 2em;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dayplan h2 {
+  color: var(--salmon);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
 }
 
 .dayplan p {
-  margin: 40px 10px;
+  margin: 15px;
+}
+
+.dayplan p span {
+  font-size: 12px;
 }
 
 @media (max-width: 900px) {
@@ -30,7 +41,7 @@
 @media (max-width: 560px) {
   .dayplan > div {
     width: auto;
-    background: #dd7e6bff url('../../images/clock.png') 80% center no-repeat
+    background: transparent url('../../images/clock.png') 80% center no-repeat
       border-box;
     background-size: 100px;
   }
@@ -39,7 +50,7 @@
 @media (max-width: 375px) {
   .dayplan > div {
     width: auto;
-    background: #dd7e6bff url('../../images/clock.png') 90% top no-repeat
+    background: transparent url('../../images/clock.png') 90% top no-repeat
       border-box;
     background-size: 80px;
   }

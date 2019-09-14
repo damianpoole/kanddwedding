@@ -1,6 +1,5 @@
 .info {
-  background: #5c7b81ff;
-  color: white;
+  background: var(--off);
   padding-top: calc(var(--header-height) + 10px);
   margin-top: calc(var(--header-height) * -1);
   -webkit-background-clip: content-box;
@@ -13,20 +12,16 @@
   width: var(--site-width);
   padding-left: 2em;
   padding-right: 2em;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 2em;
-  background: url('../../images/present.png') right top,
-    url('../../images/hanger.png') left bottom;
-  background-size: 100px, 200px;
+  background: url('../../images/hanger.png') left top,
+    url('../../images/present.png') right 50%;
+  background-size: 80px, 90px;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
   .info > div {
     width: auto;
-    grid-template-columns: none;
-    grid-column-gap: 0;
   }
 }
 

@@ -88,7 +88,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
         }}
       >
         <div>
-          <h3>RSVP</h3>
+          <h2>RSVP</h2>
           {guest.guests.map(({ name }) => {
             return (
               <AttendingInput

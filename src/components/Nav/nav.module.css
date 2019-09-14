@@ -6,8 +6,8 @@
 }
 
 .nav a {
-  text-transform: uppercase;
-  color: white;
+  text-transform: capitalize;
+  color: var(--main);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -19,7 +19,8 @@
 }
 
 .rsvp a {
-  background: #caa638ff;
+  background: var(--salmon);
+  color: #fff;
   padding: 5px 12px;
   margin: 0;
 }

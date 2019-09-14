@@ -7,7 +7,7 @@ import Styles from './hero.module.css';
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "banner.webp" }) {
+      placeholderImage: file(relativePath: { eq: "newbanner.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid

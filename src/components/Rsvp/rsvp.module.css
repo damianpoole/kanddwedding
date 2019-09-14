@@ -1,6 +1,10 @@
 .rsvp {
-  background: #caa638ff;
+  background: var(--salmon);
   color: white;
+}
+
+.rsvp h2 {
+  color: var(--main);
 }
 
 .rsvp > div {
@@ -21,15 +25,6 @@
   }
 }
 
-.rsvp p label {
-  margin: 0 10px;
-}
-
-.rsvp span {
-  width: 100px;
-  display: inline-block;
-}
-
 .avatarContainer {
   display: flex;
   justify-content: center;
@@ -40,10 +35,6 @@
   border-radius: 50%;
   height: 300px;
   width: 300px;
-}
-
-.rsvp input[type='radio']:invalid {
-  box-shadow: 0 0 5px 1px red;
 }
 
 .rsvp textarea {

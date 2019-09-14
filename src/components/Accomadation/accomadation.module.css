@@ -1,6 +1,6 @@
 .accomadation {
-  background: #405337ff;
-  color: white;
+  background: #fff;
+  color: var(--main);
   padding-top: calc(var(--header-height) + 10px);
   margin-top: calc(var(--header-height) * -1);
   -webkit-background-clip: content-box;
@@ -13,8 +13,9 @@
   width: var(--site-width);
   padding-left: 2em;
   padding-right: 2em;
-  background: url('../../images/bed.png') right top no-repeat border-box;
-  background-size: 175px;
+  background: url('../../images/bed.png') left top no-repeat border-box;
+  background-size: 110px;
+  text-align: center;
 }
 
 .accomadation > div > div {
@@ -24,11 +25,13 @@
 .accomadation h3 {
   text-decoration: underline;
   margin-bottom: 0;
+  font-size: 14px;
+  color: var(--main);
 }
 
 .accomadation a,
 .accomadation a:visited {
-  color: white;
+  color: var(--main);
 }
 
 @media (max-width: 900px) {
@@ -39,14 +42,14 @@
 
 @media (max-width: 560px) {
   .accomadation > div {
-    background: url('../../images/bed.png') right top no-repeat border-box;
-    background-size: 95px;
+    background: url('../../images/bed.png') left top no-repeat border-box;
+    background-size: 75px;
   }
 }
 
 @media (max-width: 375px) {
   .accomadation > div {
-    background: url('../../images/bed.png') right -20px no-repeat border-box;
-    background-size: 75px;
+    background: url('../../images/bed.png') left -20px no-repeat border-box;
+    background-size: 45px;
   }
 }

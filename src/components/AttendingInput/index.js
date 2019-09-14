@@ -1,65 +1,51 @@
 import React, { useState } from 'react';
+import Styles from './input.module.css';
 
 export default ({ name, handleAttendanceChange }) => {
   const [plusOne, setPlusOne] = useState();
 
   const handleNameChange = event => setPlusOne(event.target.value);
+  const noId = `${name}-no`;
+  const yesId = `${name}-yes`;
 
   return (
     <>
-      {name === '' ? (
-        <div key={name}>
-          <p>
+      <div className={Styles.attending} key={name}>
+        <p>
+          {name === '' ? (
             <input type="text" value={plusOne} onChange={handleNameChange} />
-            <label htmlFor="yes">Coming</label>
-            <input
-              type="radio"
-              id="yes"
-              data-name={plusOne}
-              name={name + '-attending'}
-              value="Yes"
-              onChange={handleAttendanceChange}
-              required
-            />
-            <label htmlFor="no">Not Coming</label>
-            <input
-              type="radio"
-              id="no"
-              data-name={name}
-              name={name + '-attending'}
-              value="No"
-              onChange={handleAttendanceChange}
-              required
-            />
-          </p>
-        </div>
-      ) : (
-        <div key={name}>
-          <p>
+          ) : (
             <span>{name}:</span>
-            <label htmlFor="yes">Coming</label>
+          )}
+          <label htmlFor={yesId} className={Styles.container}>
+            Coming
             <input
               type="radio"
-              id="yes"
+              id={yesId}
               data-name={name}
               name={name + '-attending'}
               value="Yes"
               onChange={handleAttendanceChange}
               required
             />
-            <label htmlFor="no">Not Coming</label>
+            <span className={Styles.checkmark}></span>
+          </label>
+
+          <label htmlFor={noId} className={Styles.container}>
+            Not Coming
             <input
               type="radio"
-              id="no"
+              id={noId}
               data-name={name}
               name={name + '-attending'}
               value="No"
               onChange={handleAttendanceChange}
               required
             />
-          </p>
-        </div>
-      )}
+            <span className={Styles.checkmark}></span>
+          </label>
+        </p>
+      </div>
     </>
   );
 };
