@@ -40,13 +40,7 @@
 @media (max-width: 900px) {
   .dayplan > div {
     width: auto;
-  }
-}
-
-@media (max-width: 560px) {
-  .dayplan > div {
-    width: auto;
-    background: transparent url('../../images/clock.png') 80% center no-repeat
+    background: transparent url('../../images/clock.png') 90% 70% no-repeat
       border-box;
     background-size: 100px;
   }

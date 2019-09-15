@@ -2,6 +2,10 @@
   margin: 0 10px;
 }
 
+.attending > p {
+  display: flex;
+}
+
 .attending > p > span {
   width: 100px;
   display: inline-block;
@@ -77,4 +81,11 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media (max-width: 500px) {
+  .attending > p > span {
+    width: auto;
+    flex-grow: 1;
+  }
 }

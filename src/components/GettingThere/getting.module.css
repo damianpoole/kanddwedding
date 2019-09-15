@@ -51,11 +51,6 @@
 
 @media (max-width: 560px) {
   .gettingThere > div {
-    background: url('../../images/gettingthere.png') 95% top no-repeat
-      border-box;
-    background-size: 60px;
+    background: none;
   }
-}
-
-@media (max-width: 375px) {
 }
