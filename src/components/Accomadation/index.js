@@ -6,21 +6,31 @@ const Accomadation = () => (
     <div>
       <h2>Accomadation</h2>
       <div>
-        <h3>Travelodge -</h3>
+        <h3>
+          <a href="https://www.travelodge.co.uk/hotels/132/Halifax-hotel">
+            Travelodge
+          </a>
+        </h3>
         <p>
           Address: Gate 9, Dean Clough Industrial Park, Halifax, HX3 5AY
           <br />
           Distance from Venue: 3 minute walk (0.2 miles)
         </p>
 
-        <h3>Premier Inn -</h3>
+        <h3>
+          <a href="https://www.premierinn.com/gb/en/hotels/england/west-yorkshire/halifax/halifax-town-centre.html">
+            Premier Inn
+          </a>
+        </h3>
         <p>
           Address: Broad Street Plaza, Halifax, HX1 1YA
           <br />
           Distance from Venue: approx. 10 minute walk (0.5 miles)
         </p>
 
-        <h3>The White Swan -</h3>
+        <h3>
+          <a href="http://www.whiteswanhalifax.com/en/">The White Swan</a>
+        </h3>
         <p>
           Address: Princess Street, Halifax West Yorkshire, HX1 1TS
           <br /> Distance from Venue: approx. 10 minute walk (0.5 miles)

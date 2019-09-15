@@ -16,6 +16,7 @@
   background: url('../../images/bed.png') left top no-repeat border-box;
   background-size: 110px;
   text-align: center;
+  font-size: var(--default-font-size);
 }
 
 .accomadation > div > div {
@@ -23,9 +24,8 @@
 }
 
 .accomadation h3 {
-  text-decoration: underline;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: var(--default-font-size);
   color: var(--main);
 }
 

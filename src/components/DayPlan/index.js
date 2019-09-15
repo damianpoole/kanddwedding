@@ -9,9 +9,7 @@ const DayPlan = ({ guest }) => {
       <div>
         <h2>Day Plan</h2>
 
-        <p>
-          <u>Saturday 30th November 2019</u>
-        </p>
+        <h3>Saturday 30th November 2019</h3>
 
         {allDay ? (
           <p>
@@ -21,7 +19,7 @@ const DayPlan = ({ guest }) => {
               The venue isn’t allowed to serve drinks before the ceremony due to
               some old laws about their bar being (almost) open plan. If you
               wish to have a drink before then there is a bar behind the venue
-              called <u>Stod Fold</u>
+              called <a href="http://www.stodfold.com/">Stod Fold</a>
             </span>
             <br />
             <br />

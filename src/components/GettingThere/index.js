@@ -8,7 +8,7 @@ const GettingThere = () => (
       <h2>Getting There</h2>
       <div className={Styles.grid}>
         <div className={Styles.address}>
-          <h3>Address:</h3>
+          <h3>Address</h3>
           <address>
             The Arches,
             <br />
@@ -22,14 +22,14 @@ const GettingThere = () => (
           </address>
         </div>
         <div className={Styles.transportMethod}>
-          <h3>Parking:</h3>
+          <h3>Parking</h3>
           <p>
             Plenty of parking is available onsite and is free of charge all
             weekend.
           </p>
         </div>
         <div className={Styles.transportMethod}>
-          <h3>Train:</h3>
+          <h3>Train</h3>
           <p>
             Halifax train station is a 20 minute walk from the venue. There are
             taxis outside the station and they should take about 5 minutes to

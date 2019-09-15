@@ -92,6 +92,7 @@ const RSVP = ({ guest = { guests: [] } }) => {
           {guest.guests.map(({ name }) => {
             return (
               <AttendingInput
+                key={name}
                 handleAttendanceChange={handleAttendanceChange}
                 name={name}
               />
