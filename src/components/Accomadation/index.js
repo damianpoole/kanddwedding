@@ -4,7 +4,7 @@ import Styles from './accomadation.module.css';
 const Accomadation = () => (
   <section id="accommodation" className={Styles.accomadation}>
     <div>
-      <h2>Accomadation</h2>
+      <h2>Accommodation</h2>
       <div>
         <h3>
           <a href="https://www.travelodge.co.uk/hotels/132/Halifax-hotel">

@@ -7,7 +7,7 @@ export default () => (
       <h2>What to wear</h2>
       <p>
         Day Guests: Something smart. We’re not talking black tie but you get the
-        picture!.
+        picture.
       </p>
 
       <p>Evening Guests: Smart-casual will be fine</p>

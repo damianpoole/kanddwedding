@@ -14,7 +14,7 @@
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: var(--default-font-size);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
