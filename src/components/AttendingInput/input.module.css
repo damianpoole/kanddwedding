@@ -11,6 +11,11 @@
   display: inline-block;
 }
 
+.attending > p > span > input[type='text'] {
+  width: 100px;
+  overflow: auto;
+}
+
 /* Customize the label (the container) */
 .container {
   display: inline-block;

@@ -13,7 +13,14 @@ export default ({ name, handleAttendanceChange }) => {
       <div className={Styles.attending} key={name}>
         <p>
           {name === '' ? (
-            <input type="text" value={plusOne} onChange={handleNameChange} />
+            <span>
+              <input
+                type="text"
+                placeholder="Guests name"
+                value={plusOne}
+                onChange={handleNameChange}
+              />
+            </span>
           ) : (
             <span>{name}:</span>
           )}
