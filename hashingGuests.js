@@ -1,9 +1,9 @@
-import { createHash } from 'crypto';
-import { writeFileSync } from 'fs';
+const { createHash } = require('crypto');
+const { writeFileSync } = require('fs');
 
-import { map } from './src/data/guests.json';
+const data = require('./src/data/guests.json');
 
-const output = map(guest => {
+const output = data.map(guest => {
   const hash = createHash('md5')
     .update(guest.family)
     .digest('hex');
