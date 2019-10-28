@@ -595,5 +595,18 @@
       }
     ],
     "id": "76869d6ae844cafcc6dbb1a13dc92bfc"
+  },
+  {
+    "type": "reception",
+    "family": "Aleksei Murashin",
+    "guests": [
+      {
+        "name": "Aleksei"
+      },
+      {
+        "name": "Anna"
+      }
+    ],
+    "id": "088aeae3c4ff5e0791e5a9925f20b321"
   }
 ]
