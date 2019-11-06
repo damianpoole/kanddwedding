@@ -608,5 +608,18 @@
       }
     ],
     "id": "088aeae3c4ff5e0791e5a9925f20b321"
+  },
+  {
+    "type": "wedding",
+    "family": "Hayley Drummond",
+    "guests": [
+      {
+        "name": "Hayley"
+      },
+      {
+        "name": ""
+      }
+    ],
+    "id": "efb85adb2548a30f7066b0e0103889c9"
   }
 ]
