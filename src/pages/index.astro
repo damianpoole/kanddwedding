@@ -1,0 +1,137 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import heroImage from '../images/newbanner.jpg';
+import rsvpImage from '../images/kirstyanddamian.jpg';
+import accommodationStyles from '../components/Accomadation/accomadation.module.css';
+import dayPlanStyles from '../components/DayPlan/dayplan.module.css';
+import gettingStyles from '../components/GettingThere/getting.module.css';
+import headerStyles from '../components/Header/header.module.css';
+import heroStyles from '../components/Hero/hero.module.css';
+import infoStyles from '../components/Info/info.module.css';
+import navStyles from '../components/Nav/nav.module.css';
+import rsvpStyles from '../components/Rsvp/rsvp.module.css';
+---
+
+<Layout title="Home">
+  <header class={headerStyles.header}>
+    <div class="container">
+      <nav class={navStyles.nav}>
+        <div class={navStyles.rsvp}>
+          <a href="#rsvp" data-rsvp-link hidden>RSVP</a>
+        </div>
+        <div>
+          <a href="#gettingthere">Getting There</a>
+          <a href="#dayplan">Day Plan</a>
+          <a href="#accommodation">Accommodation</a>
+          <a href="#whattowear">What to wear</a>
+          <a href="#whattowear">Gifts</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class={heroStyles.hero}>
+    <Image
+      src={heroImage}
+      alt="Kirsty and Damian"
+      widths={[480, 768, 1024, 1600, 2665]}
+      sizes="100vw"
+      format="webp"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </section>
+
+  <section id="gettingthere" class={gettingStyles.gettingThere}>
+    <div>
+      <h2>Getting There</h2>
+      <div class={gettingStyles.grid}>
+        <div class={gettingStyles.address}>
+          <h3>Address</h3>
+          <address>
+            The Arches,<br />E Mill,<br />328 Dean Clough,<br />Halifax,<br />HX3 5AX
+          </address>
+        </div>
+        <div class={gettingStyles.transportMethod}>
+          <h3>Parking</h3>
+          <p>Plenty of parking is available onsite and is free of charge all weekend.</p>
+        </div>
+        <div class={gettingStyles.transportMethod}>
+          <h3>Train</h3>
+          <p>Halifax train station is a 20 minute walk from the venue. There are taxis outside the station and they should take about 5 minutes to get to the venue.</p>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2360.437342363741!2d-1.866244684484316!3d53.7282851537351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be80749657993%3A0xab9868995d0e85c!2sThe+Arches!5e0!3m2!1sen!2suk!4v1566243324590!5m2!1sen!2suk"
+      width="100%" height="450" style="border:0" title="Google map location of The Arches" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <section id="dayplan" class={dayPlanStyles.dayplan} data-day-plan hidden>
+    <div>
+      <h2>Day Plan</h2>
+      <h3>Saturday 30th November 2019</h3>
+      <p data-all-day hidden>
+        12.30pm - 1pm Arrive at venue<br />
+        <span>The venue isn’t allowed to serve drinks before the ceremony due to some old laws about their bar being (almost) open plan. If you wish to have a drink before then there is a bar behind the venue called <a href="http://www.stodfold.com/">Stod Fold</a></span>
+        <br /><br />1pm Ceremony starts<br />1.30pm Welcome drinks at the bar<br />3pm Wedding breakfast*<br />5pm Finish wedding breakfast &amp; speeches*<br />7pm Evening guests arrive<br />8pm First dance/Cake cutting*<br />8.30pm/9pm Evening food*
+      </p>
+      <p data-evening hidden>7pm Evening guests arrive<br />8pm First dance/Cake cutting*<br />8.30pm/9pm Evening food*</p>
+      <p>(*this might change)</p>
+    </div>
+  </section>
+
+  <section id="accommodation" class={accommodationStyles.accomadation}>
+    <div>
+      <h2>Accommodation</h2>
+      <div>
+        <h3><a href="https://www.travelodge.co.uk/hotels/132/Halifax-hotel">Travelodge</a></h3>
+        <p>Address: Gate 9, Dean Clough Industrial Park, Halifax, HX3 5AY<br />Distance from Venue: 3 minute walk (0.2 miles)</p>
+        <h3><a href="https://www.premierinn.com/gb/en/hotels/england/west-yorkshire/halifax/halifax-town-centre.html">Premier Inn</a></h3>
+        <p>Address: Broad Street Plaza, Halifax, HX1 1YA<br />Distance from Venue: approx. 10 minute walk (0.5 miles)</p>
+        <h3><a href="http://www.whiteswanhalifax.com/en/">The White Swan</a></h3>
+        <p>Address: Princess Street, Halifax West Yorkshire, HX1 1TS<br />Distance from Venue: approx. 10 minute walk (0.5 miles)</p>
+        <p>For more hotels here’s a <a href="https://bit.ly/2HFQA9I" target="_blank" rel="noopener noreferrer">handy link to booking.com</a> for the night of the wedding (based on 2 people)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whattowear" class={infoStyles.info}>
+    <div>
+      <h2>What to wear</h2>
+      <p>Day Guests: Something smart. We’re not talking black tie but you get the picture.</p>
+      <p>Evening Guests: Smart-casual will be fine</p>
+      <h2>Gifts</h2>
+      <p>We don’t expect you to get us a gift.</p>
+      <p>If you do wish to get us something though, we’d prefer cash please.</p>
+      <p>You might know, we’re hopefully moving to Seattle next year (subject to visas) and we don’t plan on taking much with us.</p>
+      <p>We’ll put the cash towards a honeymoon or for buying all the new stuff we’ll need when we get to Seattle.</p>
+    </div>
+  </section>
+
+  <section id="rsvp" class={rsvpStyles.rsvp} data-rsvp hidden>
+    <div>
+      <div>
+        <h2>RSVP</h2>
+        <div data-attendees></div>
+        <label for="dietary">Any dietary requirements and who they’re for / any other comments:</label>
+        <textarea id="dietary" rows="8" cols="32"></textarea>
+        <form name="rsvp" action="/success" method="post" data-netlify="true">
+          <input type="hidden" name="values" value="" />
+          <input type="hidden" name="form-name" value="rsvp" />
+          <button type="submit" disabled>Submit</button>
+        </form>
+      </div>
+      <div class={rsvpStyles.avatarContainer}>
+        <Image class={rsvpStyles.avatar} src={rsvpImage} alt="Kirsty and Damian" width={300} height={300} fit="cover" position="center" />
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import guestData from '../data/guests.json';
+    import { initialiseGuestRsvp } from '../scripts/guest-rsvp.js';
+    initialiseGuestRsvp(document, window.location.search, guestData);
+  </script>
+</Layout>

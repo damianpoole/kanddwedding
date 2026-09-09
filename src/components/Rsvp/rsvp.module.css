@@ -43,3 +43,77 @@
   width: 100%;
   margin: 10px 0;
 }
+
+.rsvp :global(.attending p) {
+  display: flex;
+}
+
+.rsvp :global(.attending p > span) {
+  width: 100px;
+  display: inline-block;
+}
+
+.rsvp :global(.attending p > span > input[type='text']) {
+  width: 100px;
+}
+
+.rsvp :global(.attendance-option) {
+  display: inline-block;
+  position: relative;
+  padding-left: 22px;
+  margin: 0 10px 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rsvp :global(.attendance-option input) {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.rsvp :global(.checkmark) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+}
+
+.rsvp :global(.attendance-option:hover input ~ .checkmark) {
+  background-color: #ccc;
+}
+
+.rsvp :global(.attendance-option input:checked ~ .checkmark) {
+  background-color: #2196f3;
+}
+
+.rsvp :global(.attendance-option input:invalid ~ .checkmark) {
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4);
+}
+
+.rsvp :global(.checkmark::after) {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.rsvp :global(.attendance-option input:checked ~ .checkmark::after) {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .rsvp :global(.attending p > span) {
+    width: auto;
+    flex-grow: 1;
+  }
+}

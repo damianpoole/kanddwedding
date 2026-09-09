@@ -1,16 +1,11 @@
-const { createHash } = require('crypto');
-const { writeFileSync } = require('fs');
+import { createHash } from 'node:crypto';
+import { readFileSync, writeFileSync } from 'node:fs';
 
-const data = require('./src/data/guests.json');
+const guestDataUrl = new URL('./src/data/guests.json', import.meta.url);
+const data = JSON.parse(readFileSync(guestDataUrl, 'utf8'));
+const output = data.map((guest) => ({
+  ...guest,
+  id: createHash('md5').update(guest.family).digest('hex'),
+}));
 
-const output = data.map(guest => {
-  const hash = createHash('md5')
-    .update(guest.family)
-    .digest('hex');
-  return {
-    ...guest,
-    id: hash,
-  };
-});
-
-writeFileSync('./src/data/guests.json', JSON.stringify(output, null, 2));
+writeFileSync(guestDataUrl, JSON.stringify(output, null, 2));

@@ -1,46 +1,39 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kirsty-and-damian-wedding",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
+  "description": "Kirsty and Damian's wedding website",
+  "version": "1.0.0",
   "author": "Damian Poole",
+  "type": "module",
+  "engines": {
+    "node": ">=26 <27",
+    "npm": ">=11"
+  },
+  "scripts": {
+    "build": "astro build && node scripts/generate-service-worker.js",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "preview": "astro preview",
+    "format": "prettier --write .",
+    "test": "node --test tests/guest-rsvp.test.js",
+    "test:build": "node --test tests/build-output.test.js",
+    "test:smoke": "node tests/browser-smoke.test.js"
+  },
   "dependencies": {
-    "gatsby": "^2.23.1",
-    "gatsby-image": "^2.2.10",
-    "gatsby-plugin-manifest": "^2.2.6",
-    "gatsby-plugin-offline": "^2.2.7",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-plugin-react-helmet": "^3.1.4",
-    "gatsby-plugin-sharp": "^2.2.13",
-    "gatsby-source-filesystem": "^2.3.10",
-    "gatsby-transformer-json": "^2.2.6",
-    "gatsby-transformer-sharp": "^2.2.7",
-    "prop-types": "^15.7.2",
-    "query-string": "^6.8.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "astro": "7.3.2",
+    "sharp": "0.35.4"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "playwright-core": "1.63.0",
+    "prettier": "3.9.0"
   },
   "keywords": [
-    "gatsby"
+    "astro",
+    "wedding"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/damianpoole/kanddwedding"
   }
 }
